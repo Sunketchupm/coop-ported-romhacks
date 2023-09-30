@@ -1,0 +1,48 @@
+function switchCourseNames()
+
+smlua_text_utils_course_acts_replace(COURSE_BOB, (" 1 AUTUMNAL FALLS"),	("FLOTATION TREE TECHNOLOGY"),	("THE SIDE CAVE"),	("THE HEART OF THE MOUNTAIN"),	("CLIMB TO THE CASTLE"),	("THE PILLARS' SECRETS"),	("HIDDEN AMONG THE BOXES"))
+
+smlua_text_utils_course_acts_replace(COURSE_WF, (" 2 ANIHASA VILLAGE"),	("DANCE ON THE ROOFTOPS"),	("THE PINK CASTLE ROOF"),	("MOUNT THE STONE STRUCTURE"),	("SWIM BENEATH THE CASTLE WALLS"),	("COINS SCATTERED AMONG THE TOWN"),	("SECRET OF THE LONELY BLUE FLOWER -VC-"))
+
+smlua_text_utils_course_acts_replace(COURSE_JRB, (" 3 WOODSHROOM ISLES"),	("THE TIP TOP WOODSHROOM"),	("HIDING ON THE SIDE"),	("THIS WAS SUPPOSED TO BE A BOSS 2"),	("RED COINS OF THE ISLES"),	("SO CLOSE AND YET SO FAR"),	("SNEAK THROUGH THE VINES -VC-"))
+
+smlua_text_utils_course_acts_replace(COURSE_CCM, (" 4 GEOMETRICAL DASHLAND"),	("LIVING IN A LAZY GRAYSCALE WORLD"),	("THE MONOCHROMATIC MAZE"),	("WARP OF THE MAZE"),	("TRAPPED IN PRIOR EN-CAGE-MENTS"),	("THE HIDDEN ROOM"),	("THE TRIALS OF DASH"))
+
+smlua_text_utils_course_acts_replace(COURSE_BBH, (" 5 SUNSET LAVA TOWERS"),	("TROUBLESOME TOWER TRAVERSAL"),	("LAVA BOUNCING ALONG THE EDGE -MC-"),	("MAGMATIC REFLECTIONS -MC-"),	("SECRET OF THE TROUBLESOME TOWER -VC-"),	("SKYHIGH SHOWDOWN"),	("INSIDE THE BIG TOWER -WC- -MC-"))
+
+smlua_text_utils_course_acts_replace(COURSE_HMC, (" 6 JABBERWOCK BEACH"),	("THE THIN WOODEN PILLARS"),	("THE TWIN TREES"),	("FLYING INTO THE VOLCANO -WC-"),	("SURF THE WATER FOR SECRETS"),	("CLIMBING THE LIGHTHOUSE"),	("SECRET OF THE SHOWER ROOM -VC-"))
+
+smlua_text_utils_course_acts_replace(COURSE_LLL, (" 7 CRYOGENIC CRYSTAL CREEK"),	("WATCHING OVER THE VILLAGE"),	("ICY WALLKICK CHALLENGE"),	("THE FROZEN TUNNEL"),	("LURKING ABOVE THE START -WC-"),	("THE CRYSTAL CAVERN'S SECRETS -MC-"),	("PENGUINS AREN'T BUGS -VC-"))
+
+smlua_text_utils_course_acts_replace(COURSE_SSL, (" 8 MUSHROOM CASTLE CLIFFS"),	("CASTLE WALLKICK CHALLENGE"),	("CLIMB THE CLIFFS"),	("VOLCANIC MAYHEM -MC-"),	("GREEN MUSHROOMS, RED COINS -WC-"),	("DANGEROUS SLIDE OF THE MOUNTAINSIDE"),	("WARP OF THE BLACK MUSHROOM -WC-"))
+
+smlua_text_utils_course_acts_replace(COURSE_DDD, (" 9 DOWNTOWN PORTLAND"),	("RACE TO THE POND"),	("DEEP IN THE SINKHOLE"),	("THE MYSTERIOUS YELLOW ORB -WC- -VC-"),	("REDS ABOVE THE CLOUDS"),	("INSIDE THE GREEN TOWER"),	("SKYSCRAPER SLIDE"))
+
+smlua_text_utils_course_acts_replace(COURSE_SL, ("10 GAMBLING GAMBIT"),	("GREET THE FANS"),	("INTERRUPT THE DOG PARTY -VC-"),	("HOUSE OF CARDS"),	("SLIDING DIAMONDS"),	("SLIPPERY SPADES"),	("THE BASE OF THE TABLE"))
+
+smlua_text_utils_course_acts_replace(COURSE_WDW, ("11 WET-DRY WORLD"),	("SHOCKING ARROW LIFTS!"),	("TOP O' THE TOWN"),	("SECRETS IN THE SHALLOWS & SKY"),	("EXPRESS ELEVATOR--HURRY UP!"),	("GO TO TOWN FOR RED COINS"),	("QUICK RACE THROUGH DOWNTOWN!"))
+
+smlua_text_utils_course_acts_replace(COURSE_TTM, ("12 FLAMING MEMORIES"),	("BACK TO BASIC LAND"),	("THE RECONSTRUCTED TOWER"),	("STILL HIGH ABOVE THE VOLCANO -MC-"),	("UPON THE STRUCTURE -VC-"),	("SURFING BELOW LAVA LEVEL -MC-"),	("NOT AS BASIC RED COINS"))
+
+smlua_text_utils_course_acts_replace(COURSE_THI, ("13 SUNKEN THROWBACKS"),	("THE BLACK TOWERS"),	("THE LESS LAVENDER TOWER -MC- -VC-"),	("GEAR UP FOR SANDY SECRETS"),	("SHOOT TO THE GREEN TOWER"),	("THE HOUSE'S PUZZLE"),	("THE ABSOLUTE CLASSIC"))
+
+smlua_text_utils_course_acts_replace(COURSE_TTC, ("14 TICK TOCK CLOCK"),	("ROLL INTO THE CAGE"),	("THE PIT AND THE PENDULUMS"),	("GET A HAND"),	("STOMP ON THE THWOMP"),	("TIMED JUMPS ON MOVING BARS"),	("STOP TIME FOR RED COINS"))
+
+smlua_text_utils_course_acts_replace(COURSE_RR, ("15 CANT LET LOCKED MACHINE ADVENTURES"),	("THE TRIALS OF DASH"),	("THE BIG HOUSE IN THE SKY"),	("COINS AMASSED IN A MAZE"),	("SWINGIN' IN THE BREEZE"),	("TRICKY TRIANGLES!"),	("SOMEWHERE OVER THE RAINBOW"))
+
+smlua_text_utils_secret_star_replace(16, ("   STARRY WALKWAYS"))
+smlua_text_utils_secret_star_replace(17, ("   TILTED TOWER"))
+smlua_text_utils_secret_star_replace(18, ("   BOWSER IN THE SKY"))
+smlua_text_utils_secret_star_replace(19, ("   :)"))
+smlua_text_utils_secret_star_replace(20, ("   CHILLED SEWERS"))
+smlua_text_utils_secret_star_replace(21, ("   CLOUDY RAINBOW CASTLE"))
+smlua_text_utils_secret_star_replace(22, ("   SUNKEN GREENSAND TOWERS"))
+smlua_text_utils_secret_star_replace(23, ("   MIRAI CATHEDRAL"))
+smlua_text_utils_secret_star_replace(24, ("   ANIHASA VILLAGE INTERIOR"))
+smlua_text_utils_secret_star_replace(25, ("   A"))
+smlua_text_utils_castle_secret_stars_replace(("   CASTLE SECRET STARS"))
+smlua_text_utils_extra_text_replace(0,("A STAR HAS BEEN DISCOVERED!"))
+
+end
+
+switchCourseNames()

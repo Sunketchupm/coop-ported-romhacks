@@ -1,0 +1,10 @@
+-- Moving Textures (WaterBoxes)
+--   Every movtext type is set to 1 (normal water texture)
+--   If you want to configure and setup other water type, change the value here
+movtexqc_register('castle_inside_1_Movtex_0', 6, 1, 0)
+movtexqc_register('bob_1_Movtex_0', 9, 1, 0)
+movtexqc_register('jrb_1_Movtex_0', 12, 1, 0)
+movtexqc_register('ddd_1_Movtex_0', 23, 1, 0)
+movtexqc_register('castle_courtyard_1_Movtex_0', 26, 1, 0)
+movtexqc_register('cotmc_1_Movtex_0', 28, 1, 0)
+movtexqc_register('wmotr_1_Movtex_0', 31, 1, 0)

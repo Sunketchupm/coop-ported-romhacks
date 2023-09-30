@@ -1,0 +1,1 @@
+vec3f_set(gLevelValues.starPositions.BigPiranhasStarPos, 1250.0, -900.0, 3411.0)
