@@ -1,5 +1,5 @@
 -- name: Super Mario Treasure World
--- description: Created by Rambi_Rampage
+-- description: A classic 182 star kazio romhack created by Rambi Rampage.\nPorted by Sunk.
 -- incompatible: romhack
 
 camera_set_use_course_specific_settings(0)

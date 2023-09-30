@@ -1,5 +1,5 @@
 -- name: Treasure World Dream Edition
--- description: Created by Rambi_Rampage
+-- description: The infamous kaizo 182 star sequal to SMTW, created by Rambi Rampage.\nPorted by Sunk.
 -- incompatible: romhack
 
 camera_set_use_course_specific_settings(0)
