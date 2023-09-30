@@ -80,6 +80,12 @@ local sExclamationBoxContents = {
     { 99, 0, 0, E_MODEL_NONE, nil }
 }
 
+_G.CustomExclamationBox = {
+    getContentsTable = function ()
+        return sExclamationBoxContents
+    end,
+}
+
 ----------------------------
 ------Helper functions------
 ----------------------------

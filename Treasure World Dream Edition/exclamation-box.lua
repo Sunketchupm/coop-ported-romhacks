@@ -78,6 +78,12 @@ local sExclamationBoxContents = {
     { 18, 0, 0, E_MODEL_HEAVE_HO,  id_bhvHeaveHo },
 }
 
+_G.CustomExclamationBox = {
+    getContentsTable = function ()
+        return sExclamationBoxContents
+    end,
+}
+
 ----------------------------
 ------Helper functions------
 ----------------------------
