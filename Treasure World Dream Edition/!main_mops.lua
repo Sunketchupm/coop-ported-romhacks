@@ -882,6 +882,8 @@ end)
 
 hook_event(HOOK_ON_LEVEL_INIT,
 function ()
+    -- Thanks TWDE
+    START_STATE = gNetworkPlayers[0].currLevelNum == LEVEL_RR and 1 or 0
     switch_block_state = START_STATE
 end)
 

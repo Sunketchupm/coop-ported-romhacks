@@ -7,10 +7,10 @@ camera_set_romhack_override(RCO_ALL)
 rom_hack_cam_set_collisions(0)
 camera_romhack_allow_centering(0)
 
-hook_event(HOOK_UPDATE,
-function ()
-    set_ttc_speed_setting(TTC_SPEED_SLOW)
+set_ttc_speed_setting(TTC_SPEED_FAST)
 
+hook_event(HOOK_ON_LEVEL_INIT,
+function ()
     if gNetworkPlayers[0].currLevelNum == LEVEL_TTM then
         gLevelValues.fixCollisionBugs = true
         gLevelValues.fixCollisionBugsFalseLedgeGrab = false

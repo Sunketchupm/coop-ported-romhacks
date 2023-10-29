@@ -103,6 +103,19 @@ local function star_spawn_cutscene(obj)
     obj.activeFlags = obj.activeFlags | ACTIVE_FLAG_INITIATED_TIME_STOP
 end
 
+---@return boolean
+local function is_current_area_sync_valid()
+    local np = gNetworkPlayers
+    for i = 1, MAX_PLAYERS - 1, 1 do
+        if np[i] and np[i].connected and
+        (not np[i].currLevelSyncValid or not np[i].currAreaSyncValid) and
+        is_player_in_local_area(gMarioStates[i]) ~= 0 then
+            return false
+        end
+    end
+    return true
+end
+
 --- @param obj Object
 --- @param hitbox ObjectHitbox
 local function obj_set_hitbox(obj, hitbox)
@@ -175,7 +188,6 @@ local function spawn_content(parent, model, behavior, first_byte, second_byte, n
     return obj
 end
 
-
 --- @param m MarioState
 --- @param model ModelExtendedId
 local function exclamation_replace_model(m, model)
@@ -218,20 +230,11 @@ local function exclamation_box_spawn_contents(exclamation_box_obj, desired_index
                 return false
             end
 
-            network_send_object(spawned_object, true)
+            if is_current_area_sync_valid() then
+                network_init_object(spawned_object, false, { "oBehParams" })
+                network_send_object(spawned_object, true)
+            end
             break
-        end
-    end
-    return true
-end
-
----@return boolean
-local function is_current_area_sync_valid()
-    local np
-    for i = 0, MAX_PLAYERS - 1, 1 do
-        np = gNetworkPlayers[i]
-        if np and np.connected and (not np.currLevelSyncValid or not np.currAreaSyncValid) then
-            return false
         end
     end
     return true

@@ -7,6 +7,8 @@ camera_set_romhack_override(RCO_ALL)
 rom_hack_cam_set_collisions(0)
 camera_romhack_allow_centering(0)
 
+set_ttc_speed_setting(TTC_SPEED_FAST)
+
 ---- Locked Dream ----
 local function on_pause_exit(isExitToCastle)
     return not (gNetworkPlayers[0].currLevelNum == LEVEL_PSS and isExitToCastle)
